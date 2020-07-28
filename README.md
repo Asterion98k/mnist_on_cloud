@@ -2,7 +2,13 @@
 
 
 ## Requirements
-tbd
+    Anaconda 4.7.11
+    python 3.5.6
+
+    tensorflow==1.12.0
+    matplotlib==3.0.2
+    numpy==1.16.1
+    pillow==6.0.0
 
 ## How to run:
     
