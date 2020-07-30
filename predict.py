@@ -48,19 +48,25 @@ def pre_pic(picName):
     return img_ready
 
 
-def application():
-    testNum = input("Input the number of test pictures: ")
-    testNum = int(testNum)
-    for i in range(testNum):
-        testPic = input("The path of test pictures:")
-        testPicArr = pre_pic(testPic)
-        preValue = restore_model(testPicArr)
-        print("The prediction number is:", preValue)
+def application(path):
+    testPicArr = pre_pic(path)
+    preValue = restore_model(testPicArr)
+    return preValue
 
 
-def main():
-    application()
+# def application():
+#     testNum = input("Input the number of test pictures: ")
+#     testNum = int(testNum)
+#     for i in range(testNum):
+#         testPic = input("The path of test pictures:")
+#         testPicArr = pre_pic(testPic)
+#         preValue = restore_model(testPicArr)
+#         print("The prediction number is:", preValue)
 
 
-if __name__ == "__main__":
-    main()
+# def main():
+#     application()
+
+
+# if __name__ == "__main__":
+#     main()
